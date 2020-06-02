@@ -7,6 +7,10 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 
+/*<div class="message message-info">*/
+/*<div class="message message-success">*/
+/*<div class="message message-warning">*/
+/*<div class="message message-error">*/
 .message {
     margin: 10px;
     width: 90%;
@@ -16,19 +20,22 @@ body, html {
     padding: 1em;
     font-size: 20px;
 }
-
+/*<div class="message message-info">*/
 .message-info {
     background-color: lightcoral;
     color: blue;
 }
+/*<div class="message message-success">*/
 .message-success {
     background-color: palegreen;
     color: green;
 }
+/*<div class="message message-warning">*/
 .message-warning {
     background-color: lemonchiffon;
     color: deepskyblue;
 }
+/*<div class="message message-error">*/
 .message-error {
     background-color: lavenderblush;
     color: red;
