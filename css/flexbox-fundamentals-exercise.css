@@ -16,14 +16,9 @@ body {
     border: 3px solid goldenrod;
     display: flex;
     flex-direction: row;
-    /*justify-content: flex-start;*/
-    /*justify-content: space-evenly;*/
-    /*flex-wrap:nowrap;*/
     align-items: flex-start;
-    /*align-items: center;*/
-    /*fornt-weight: bold;*/
     align-content: flex-start;
-    /*align-items: ;*/
+
 }
 
 .flex-item {
@@ -68,7 +63,9 @@ h2, h3 {
     width: 2em;
 }
 
-.border {border: 2px solid black;}
+.border {
+    border: 2px solid black;
+}
 
 .card {
     width: 400px;
@@ -83,7 +80,7 @@ h2, h3 {
 }
 
 section {
-    /* enter needed declarations here */
+    /* This applies to the whole card */
     display: flex;
     flex-direction: row;
 }
@@ -95,27 +92,29 @@ section:nth-of-type(1) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    /* enter needed declarations here */
 }
+
 section:nth-of-type(1) div:last-child {
     /* enter needed declarations here */
     align-self: flex-start;
 }
 
 .purple-box {
-    /*justify-content: center;*/
     background: fuchsia;
     width: 3em;
     height: 1em;
 }
 
 .purple-box:nth-of-type(1) {
+    width: 60%;
+    /*align-items: center;*/
+
     /* enter needed declarations here */
     /*flex-grow: ;*/
 }
-
 .purple-box:nth-of-type(2) {
+    width: 40%;
+    /*align-items: flex-end;*/
     /* enter needed declarations here */
 }
 
@@ -126,35 +125,42 @@ section:nth-of-type(1) div:last-child {
 }
 
 section:nth-of-type(3) {
+
+    /*justify-content: flex-start;*/
     /* enter needed declarations here */
 }
 
 section:nth-of-type(3) h3 {
+
     /* enter needed declarations here */
 
 }
 
 .orange-circle {
+
     background: orange;
     width: 2em;
     height: 2em;
     border-radius: 1em;
     margin: .5em;
+
 }
 
 .large-brown-box {
     height: 5em;
-    width: 5em;
+    width: 7em;
     background: brown;
     /* enter needed declarations here */
 }
 
 .large-brown-box:nth-of-type(2) {
+    justify-content: space-evenly;
     margin: 0 1em;
 }
 
 section:nth-of-type(5) {
     /* enter needed declarations here */
+    justify-content: space-evenly;
 }
 
 .yellow-box {
@@ -164,13 +170,16 @@ section:nth-of-type(5) {
 }
 
 section:nth-of-type(6) {
+    align-items: center;
     background: coral;
     height: 14em;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-between;
     /* enter needed declarations here */
 }
 
 .grey-box {
+    /*these boxes look green to me.*/
     background: grey;
     width: 3em;
     height: 3em;
