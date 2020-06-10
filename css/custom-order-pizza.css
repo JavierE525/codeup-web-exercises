@@ -1,12 +1,13 @@
-
-.jumbotron {
-    display: flex;
-
-}
-/*This component should be hidden for devices with small screens*/
+/*make the welcome to Pizza Worl! transparent*/
+/*and centered*/
 h1 {
-    text-align: center;
+    display: flex;
+    background-color: rgba(255,255,255,.5);
+
 }
-.nav-tabs {
+
+/*make the backgroung transparent*/
+.jumbotron jumbotron-fluid {
+
 
 }
