@@ -1,0 +1,12 @@
+
+.jumbotron {
+    display: flex;
+
+}
+/*This component should be hidden for devices with small screens*/
+h1 {
+    text-align: center;
+}
+.nav-tabs {
+
+}
