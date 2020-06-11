@@ -1,13 +1,17 @@
-/*make the welcome to Pizza Worl! transparent*/
+/*make the welcome to Pizza Worl!  text transparent*/
 /*and centered*/
 h1 {
-    display: flex;
+    /*display: flex;*/
     background-color: rgba(255,255,255,.5);
 
 }
 
-/*make the backgroung transparent*/
-.jumbotron jumbotron-fluid {
+.jumbotron {
+    width: 100%;
+    height: auto;
 
-
+}
+/*This component should be hidden for devices with small screens*/
+h1 {
+    text-align: center;
 }

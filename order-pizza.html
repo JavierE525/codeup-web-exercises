@@ -4,6 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -14,8 +16,6 @@
 <body>
 
 <!--adding the top navigation var-->
-
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Pizza world</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,15 +35,19 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Zip code" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search store near you</button>
         </form>
+<!--        ////////////////////-->
+<!--        <ul class="second-section">-->
+            <a href="#"><i class="fas fa-shopping-cart ml-auto"></i></a>
+<!--        </ul>-->
+<!--        ////////////////////-->
         <button type="button" class="btn btn-light ml-auto">Sign up</button>
     </div>
 </nav>
 <!--end of the top navigation bar-->
 <!--start of jumbotron -->
     <div class="container-fluid">
-
         <div class="jumbotron jumbotron-fluid text-center">
-            <div class="container-fluid">
+            <div class="container-fluid width-auto">
                 <h1>Welcome to Pizza World! </h1>
                 <img src="img/pizza.png">
             </div>
@@ -59,33 +63,35 @@
 <!--start nav-tabs-->
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Size and crust</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Cheese and Sauce</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Toppings</a>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
 
-        <!--start of tab 1-->
+    <!--start of tab 1-->
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Size and crust</div>
             <div class="card">
                 <h5 class="card-header">Choose size and crust</h5>
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        <!--end of tab 1-->
 
-        <!--start of tab 2-->
+                <div class="card text-right" style="width: 18rem;">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Next Step</a>
+                    </div>
+                </div>
+
+            </div>
+    <!--end of tab 1-->
+
+    <!--start of tab 2-->
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Cheese and Sauce</div>
 
-        <!--start of tab 3-->
+    <!--start of tab 3-->
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Topping</div>
         <!--start of tab 3-->
         </div>
