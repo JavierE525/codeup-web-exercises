@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>External JS HTML</title>
+
 </head>
 <body>
-$END$
+<script src="js/external.js"></script>
+
+    <script>
+        console.log("Hello from external_js.html");
+        alert("Welcome to my Website!!!");
+
+        var userInput = prompt('Please type something-Inside external_js.html:');
+        console.log('The user entered: ' + userInput);
+
+    </script>
 </body>
 </html>
