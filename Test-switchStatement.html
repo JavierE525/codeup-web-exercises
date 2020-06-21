@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // "use strict"
+    var text;
+    var UserName = prompt("Your name please : ");
+    var favDrink = prompt("What's your favorite cocktail drink?");
+    switch(favDrink) {
+        case "Martini":
+            text = "Excellent choice! Matini is my favorite drink too.";
+            alert(UserName + " You answere : " + favDrink);
+            break;
+        case "Daiquiri":
+            text = "Daiquiri is my favorite too!";
+            alert(UserName + " You answere : " + favDrink);
+            break;
+        case "Cosmopolitan":
+            text = "Really? Are you sure the Cosmopolitan is your favorite?";
+            alert(UserName + "You answere : " + favDrink);
+            break;
+        case "Tequila":
+            text = "Really? Are you sure the A tequila short?";
+            alert("Are you sure you can handle your " + favDrink + " " + UserName );
+            alert(favDrink + " makes you silly " + UserName + " So, sure you want to do this?" );
+            break;
+        case "Vodka Sprite":
+            text = "Really? Are you sure the Vodka Sprite?";
+            alert(UserName + " You answere : " + favDrink + " Yay!!! Lets do this!!!");
+            break;
+        default:
+            // text = "Please choose :[Martini] or [Daiquiri] or [Cosmopolitan] or [Tequila] or [Vodka Sprite]";
+            alert("We don't have " +  favDrink + " but we will get some " + favDrink + " soon! " + UserName);
+            alert("Please choose :[Martini] or [Daiquiri] or [Cosmopolitan] or [Tequila] or [Vodka Sprite]");
+            break;
+    }
+</script>
+
+</body>
+</html>
