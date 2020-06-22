@@ -7,27 +7,42 @@ alert("Welcome to Javier's Website!");
 // will you have to pay?
 
 // var littleM = 3;
-var littleM = prompt("How many day will you be renting the Little Mermaid for?")
-// console.log("You are renting the Little Mermaid for " + littleM + " days");
+var littleM = prompt("How many days will you be renting the Little Mermaid for?")
+console.log("You are renting the Little Mermaid for " + littleM + " days");
 
 // var brotherB = 5;
-var brotherB = prompt("How many day will you be renting the Brother Bear for?")
-// console.log("You are renting the Brother Bear for " + brotherB + " days");
+var brotherB = prompt("How many days will you be renting the Brother Bear for?")
+console.log("You are renting the Brother Bear for " + brotherB + " days");
 
 // var hercules = 1;
-var hercules = prompt("How many day will you be renting the Hercules for?")
-// console.log("You are renting the Hercules for " + hercules + " days");
+var hercules = prompt("How many days will you be renting the Hercules for?")
+console.log("You are renting the Hercules for " + hercules + " days");
 
-var totalCost = (littleM + brotherB + hercules) * 3;
-// console.log("Your total cost is: $" + totalCost.toFixed(2));
+var totalCost = (littleM * 3) + (brotherB * 3) + (hercules * 3);
+// console.log("Your total cost for all movies is: $ " + totalCost.toFixed(2));
+alert("Your total cost for all movies is: $" + totalCost.toFixed(2));
 
-// Suppose you're working as a contractor for 3 companies: Google, Amazon and Facebook, they pay you a different rate per hour. Google pays $400, Amazon $380, and Facebook $350. How much will you receive in payment for this week? You worked 10 hours for Facebook, 6 hours for Google and 4 hours for Amazon.
-var googlePay = 400;
-var amazonPay = 380;
-var facebookPay = 350;
-var facebookHours = 10;
-var googleHours = 6;
-var amazonHours = 4;
+// Suppose you're working as a contractor for 3 companies: Google, Amazon and Facebook,
+// they pay you a different rate per hour. Google pays $400, Amazon $380, and Facebook
+// $350. How much will you receive in payment for this week? You worked 10 hours for Facebook,
+// 6 hours for Google and 4 hours for Amazon.
+
+// var googlePay = 400;
+var googlePay = prompt("How much is google paying you per hour Javier?")
+console.log("Google is paying Javier: $ " + googlePay + " per hours");
+
+// var amazonPay = 380;
+// var facebookPay = 350;
+// var facebookHours = 10;
+
+// var googleHours = 6;
+var googleHours = prompt("How many hours did you work for google?")
+console.log("You worked " + googleHours + " hours");
+
+// var amazonHours = 4;
+var amazonHours = prompt("How many hours did you work for Amazon?")
+console.log("You worked " + amazonHours + " hours");
+
 var totalGooglePay = googlePay * googleHours;
 var totalAmazonPay = amazonPay * amazonHours;
 var totalFacebookPay = facebookPay * facebookHours;
