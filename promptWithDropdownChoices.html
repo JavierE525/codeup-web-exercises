@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        function choice1()
+        {
+            var x = document.getElementById(“test-dropdown”);
+            alert(x.options[x.selectedIndex].value);
+        }
+    </script>
+
+    <select id=“test-dropdown” onchange=“choice1()”>
+
+        <option value=“1”>One</option>
+
+        <option value=“2”>Two</option>
+
+        <option value=“3”>Three</option>
+
+    </select>
+</body>
+</html>
