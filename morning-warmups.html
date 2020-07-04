@@ -173,13 +173,53 @@
         // lightSwitch();
         // console.log("The lights are: " + lightState);
 
-        let myltiply = function(a,b) {
-            let answer = 0;
-            for (let i =0; 1<b;i++) {
-                answer += a;
+        // let myltiply = function(a,b) {
+        //     let answer = 0;
+        //     for (let i =0; 1<b;i++) {
+        //         answer += a;
+        //     }
+        // }
+        // console.log(multiply(4, 5));
+
+
+        // using a loop and coditionals. Output the numbers 1-10
+        // pring 1 is odd, 4 i even, all the way down to ten.
+        let evenNumber = "is an even number: "
+        let oddNumber = " is an odd number: "
+
+        // for (var i = 0; i < 10; i++) {
+        //     console.log("Round : " + i);
+        //     // let n =Math.floor(Math.random() * 180) + 20;
+        //
+        //     if (n % 2 === 0) {
+        //         console.log("Your number: " + n + " " + evenNumber);
+        //     } else {
+        //         console.log("Your number #: " + n + " " + oddNumber);
+        //     }
+        // }
+
+        //Given a string, return a string in which each character
+        // (case-sensitive) is repeated twice.
+
+
+        function doubleChar(str) {
+//   Define a function with the name doubleChar("string")
+//   It should return typeof string
+//   Create a new variable to hold the returnString
+//   Loop (for, while, do while loops) through the parameter and check each character ([index]), concat that character twice to the returnString
+//   Return the returnString
+
+     let returnString = "";
+        for (var i = 0; i < str.length; i++) {
+        // first i = 0, returnString += str[0] + str[0] === returnString += 'a' + 'a'
+        // second i = 1, returnString += str[1] + str[1] === returnString += 'b' + 'b'
+        // third i = 2, returnString += str[2] + str[2] === returnString += 'c' + 'c'
+             returnString += str[i] + str[i];
+             console.log(returnString);
             }
+        return returnString;
         }
-        console.log(multiply(4, 5));
+
 
     </script>
 </body>
