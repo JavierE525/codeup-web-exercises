@@ -1,18 +1,10 @@
-
-// for (var i = 0, j = 9; i < 10; i++, j--) {
-//     console.log('for loop iteration #' + i + ', j = ' + j);
-// }
-
-// prompt("you reached for_loops.js")
-
 ///////////////////showMultiplicationTable #1////////////////////
-//
-// for (let i = 1; i <= 10; i++) {
-//     var a = 7 * i;
-//     // console.log(i);
-//     console.log('7 x '+ i + " = " + a);
-// }
-// console.log("We are done!");
+let ShowMultiplicationTable = function(num) {
+ for (let i = 1; i <= 10; i++)
+     console.log(num + " x " + i + " = " + (i * num));
+
+}
+ShowMultiplicationTable(7);
 
 /////////////////////////for Loop #2/////////////////////////////
 // Use a for loop and the code from the previous lessons to
@@ -23,20 +15,9 @@
 // let b = "Your ODD number: ";
 // for (let i = 0; i < 10)
 
-// let evenNumber = "is an even number: "
-// let oddNumber = " is an odd number: "
-//
-// for (var i = 0; i < 10; i++) {
-//     console.log("Round : " + i);
-//     let n =Math.floor(Math.random() * 180) + 20;
-//
-//     if (n % 2 === 0) {
-//         console.log("Your number: " + n + " " + evenNumber);
-//     } else {
-//         console.log("Your number #: " + n + " " + oddNumber);
-//     }
+// if ((x % 2) !== 0) {
+//     console.log("Here is an odd number: " + x)
 // }
-// console.log("We are done!");
 ///////////////////////for Loop #3////////////////////////////////////
 // Create a for loop that uses console.log to create the
 // output shown below.
@@ -82,13 +63,54 @@
 // console.log("We are done!");
 
 ///////////////////////for Loop #6//////////////////////////
-let n = 5;
-for (let i = 1; i <= 20; i++; ) {
-    var a = 5;
-    // var b = (101 - i);
-    // console.log(i);
-    console.log(a);
-    console.log(i);
-}
+// let evenNumber = "is an even number: "
+// let oddNumber = " is an odd number: "
+//
+// for (var i = 0; i < 10; i++) {
+//     console.log("Round : " + i);
+//     let n =Math.floor(Math.random() * 180) + 20;
+//
+//     if (n % 2 === 0) {
+//         console.log("Your number: " + n + " " + evenNumber);
+//     } else {
+//         console.log("Your number #: " + n + " " + oddNumber);
+//     }
+// }
+//////////////////////////////
+// let evenNumber = "is an even number: "
+// let oddNumber = " is an odd number: "
+// for (let i = 1; i <= 21; i++) {
+//     let b = (101 - i);
+//     console.log(b);
+// }
+// console.log("We are done!");
 
-console.log("We are done!");
+
+
+
+
+///////////////////////////////////////////////////////
+///////////////   PRACTICE PROBLEMS  //////////////////
+///////////////////////////////////////////////////////
+// let multiply = function (a,b) {
+//     let answer = 0;
+//      while (b> 0) {
+//          b--;
+//          answer += a;
+//      }
+//      return answer;
+//
+// }
+// console.log(multiply(3, 7));
+//
+// let addition = function (a,b) {
+//     for (; a > 0; a--)
+//     {
+//         b++;
+//     }
+//         return b;
+//     }
+//
+// console.log(addition(7,2));
+
+
