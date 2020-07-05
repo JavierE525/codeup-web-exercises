@@ -9,10 +9,10 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-cosnt sayHello = function (name) {
+let sayHello = function (name) {
     return ("Hello, " + name + "!");
 }
-console.log(sayHello("codeup"));;
+console.log(sayHello("codeup"));
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -21,8 +21,8 @@ console.log(sayHello("codeup"));;
  * console.log 'helloMessage' to check your work
  */
 
-let helloMessage = sayHello("Javier");
-console.log(helloMessage);
+// let helloMessage = sayHello("Javier");
+// console.log(helloMessage);
 
 
 /**
@@ -32,8 +32,8 @@ console.log(helloMessage);
  * console.
  */
 
-let helloMessage = sayHello("Hyperion");
-console.log(helloMessage);
+// let helloMessage = sayHello("Hyperion");
+// console.log(helloMessage);
 // console.log(myName);  // So far so good.
 
 // Don't modify the following line, it generates a random number between 1 and 3
@@ -45,8 +45,8 @@ var random = Math.floor((Math.random() * 3) + 1);
 
 /**
  * TODO:
- * Create a function called 'isTwo' that takes a number as a parameter.
- * The function should return a boolean value based on whether or not the passed
+ * 1-- Create a function called 'isTwo' that takes a number as a parameter.
+ * 2-- The function should return a boolean value based on whether or not the passed
  * number is the number 2.
  *
  * Example
@@ -60,12 +60,23 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
+// if/else example
+// if (condition) {
+//     // code here gets executed if condition evaluates to true
+// } else {
+//     // code here gets executed if condition evaluates to false
+//}
     cosnt isTwo = function (num) {
-        return num ===2;
+        if ()
+            //code
+        esle
     }
-   console.log(isTwo(random));
-
+    console.log("The true or false answer is: " + num);
 }
+
+
+
+
 
 /**
  * TODO:
@@ -78,9 +89,11 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.25, 25.50) // returns 6.37
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-const calculateTip function (tipPercentace, totalBill) {
+let calculateTip = function (tipPercentace, totalBill) {
     return tipPercentace * totalBill;
 }
+calculateTip(calculateTip(0.20, 20));
+calculateTip(calculateTip(0.25, 25.50));
 calculateTip(calculateTip(0.20, 20));
 
 /**
@@ -94,19 +107,19 @@ let tipPercentace = parseFloat +prompt ("What percentage would you like to tip?"
 // let totalBill = prompt(prompt("What is your bill total?"));
 alert("Suggetsted Tip Ammount: $: + calculateTip(tipPercentage, ttotalBill));
 
- * TODO:
- * Create a function named `applyDiscount`. This function should accept a price
- * (before a discount is applied), and a discount percentage (a number between 0
- * and 1). It should return the result of applying the discount to the original
- * price.
- *
- * Example:
- var originalPrice = 100;
- var dicountPercent = .2; // 20%
- * > applyDiscount(originalPrice, dicountPercent) // 80
- *
- * > applyDiscount(45.99, 0.12) // 40.4712
- */
+ // * TODO:
+ // * Create a function named `applyDiscount`. This function should accept a price
+ // * (before a discount is applied), and a discount percentage (a number between 0
+ // * and 1). It should return the result of applying the discount to the original
+ // * price.
+ // *
+ // * Example:
+ // var originalPrice = 100;
+ // var dicountPercent = .2; // 20%
+ // * > applyDiscount(originalPrice, dicountPercent) // 80
+ // *
+ // * > applyDiscount(45.99, 0.12) // 40.4712
+ // */
 
 const applyDiscount(originalPrice, dicountPercent)
 {
