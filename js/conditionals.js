@@ -65,7 +65,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
         console.log("Srawberries are red" + color);
     }
 
-
+C
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
