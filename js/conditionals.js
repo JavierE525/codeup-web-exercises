@@ -20,16 +20,17 @@
  * console.logging the function's return value
  */
 function analyzeColor(color) {
-    if(color === "blue");{
+    if(color === "blue") {
         console.log("blue is the color of the sky");
-    } else if(color === "red:) {
-        console.log("I don't know anything about cyan");
+    } else if(color === "red"){
+        console.log("I don't know anything about red");
     } else if(color === "cyan") {
-      console.log("I don't know anything about cyan");
+        console.log("I don't know anything about red");
     } else {
-        console.log("you chose" + color + ", please choose: blue, red, or cyan as a clor");
+        console.log("you chose " + color + ", please choose: blue, red, or cyan as a clor");
+    }
 }
-console.log(analyzeColor("blue")); //blue is the color
+console.log(analyzeColor("orange")); //blue is the color
 
 
 // Don't change the next two lines!
