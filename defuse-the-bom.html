@@ -14,9 +14,10 @@
     "use strict";
 
     var detonationTimer = 5;
+    var interval = 4000; // interval time in milliseconds
 
     // TODO: This function needs to be called once every second
-    function updateTimer() {
+    function updateTimer () {
         if (detonationTimer == 0) {
             alert('EXTERMINATE!');
             document.body.innerHTML = '';
@@ -28,9 +29,13 @@
     }
 
     // TODO: When this function runs, it needs to
-    // cancel the interval/timeout for updateTimer()
-    function defuseTheBOM() {
+    var setIntervalId = setInterval(updateTimer, 1000);
+    console.log("This is the interval ID: " + setIntervalId);
 
+    // cancel the interval/timeout for updateTimer()
+
+    function defuseTheBOM() {
+        clearTimeout(setIntervalId);
     }
 
     // Don't modify anything below this line!
@@ -40,6 +45,7 @@
     // We will learn about events in the DOM lessons
     var defuser = document.getElementById('defuser');
     defuser.addEventListener('click', defuseTheBOM);
+
 })();
 </script>
 </body>
