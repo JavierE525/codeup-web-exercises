@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Play around with stuff</title>
 </head>
 <body>
-$END$
+<p id="hello">Fortuna Rocks!</p>
+<p id="demoText">Fortuna Rocks!</p>
+<script>
+    (function () {
+        var pHello = document.getElementById('hello');
+        pHello.innerHTML = "<b>Hello Hyperion!</b>"
+        var pDemo = document.getElementById('demoText');
+        pDemo.innerText = "<b>Hello Hyperion!</b>"
+    })();
+</script>
 </body>
 </html>
