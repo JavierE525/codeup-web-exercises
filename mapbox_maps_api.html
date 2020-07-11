@@ -2,9 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>First Mapbox Map</title>
+    <!-- Mapbox CSS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- Custom CSS -->
+    <style>
+        #map {
+            /* the width and height may be set to any size */
+            width: 100%;
+            height: 700px;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+
+<h2>First Mapbox Map!</h2>
+
+<style type="text/css">
+    #info {
+        display: block;
+        position: relative;
+        margin: 0px auto;
+        width: 50%;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        font-size: 12px;
+        text-align: center;
+        color: #222;
+        background: #fff;
+    }
+</style>
+<script>
+var marker = new mapboxgl.Marker()
+.setLngLat([30.5, 50.5])
+.addTo(map);
+</script>
+
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<h3 id="reverseGeo"></h3>
+
+<!-- Mapbox JS -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<!-- Custom JS -->
+
+<script>
+    mapboxgl.accessToken = mapboxKey;
+
+
+    let map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,  // 5, 15,,20
+        center: [-98.600235, 29.592931] // 29.592931, -98.600235
+    });
+
+    // adding new marker for Javier's Microwave Location  ////////////////////
+    //////////////////////////////////////////////////////////////////////////
+    var popup1 = new mapboxgl.Popup()
+        .setHTML("<h4>Javier's Microwave!-Frozen pop pies anyone?</h4>")
+
+    var marker1 = new mapboxgl.Marker()
+        .setLngLat([-98.662395, 29.734359]) // ([-98.849579, 36.083918])
+        .setPopup(popup1)
+        .addTo(map)
+    // Javier's new marker /////
+    ////////////////////// End of Javier's Microwave Location ////////////////
+
+
+    /////////////////////// Salt Grass////////////////////////////////////////
+    var popup2 = new mapboxgl.Popup()
+        .setHTML("<h4>Saltgrass-I love the stake and veggies plate</h4>")
+
+    var marker2 = new mapboxgl.Marker()
+        .setLngLat([-98.471367, 29.595734]) //29.595734, -98.471367
+        .setPopup(popup2)
+        .addTo(map)
+    // Javier's new marker /////
+    ////////////////////////// End of Saltgrass Location ////////////////////
+
+
+    /////////////////////// Stone Werks ////////////////////////////////////////
+    var popup3 = new mapboxgl.Popup()
+        .setHTML("<h4>Stone Werks-Awesome atmosphere, good drinks, good food!</h4>")
+
+    var marker3 = new mapboxgl.Marker()
+        .setLngLat([-98.508850, 29.610315])
+        .setPopup(popup3)
+        .addTo(map)
+    // Javier's new marker /////
+    ////////////////////////// End of Stone Werks Location //////////////////////
+
+    /////////////////////// Rudys BBQ ///////////////////////////////////////////
+    var popup3 = new mapboxgl.Popup()
+        .setHTML("<h4>Rudys BBQ-- Need I say more.</h4>")
+
+    var marker3 = new mapboxgl.Marker()
+        .setLngLat([-98.629321, 29.666527]) // 29.666527, -98.629321
+        .setPopup(popup3)
+        .addTo(map)
+    // Javier's new marker /////
+    ////////////////////////// End of Rudys BBQ Location /////////////////////////
+
+    /////////////////////// Red Robin ///////////////////////////////////////////
+    var popup4 = new mapboxgl.Popup()
+        .setHTML("<h4>Red Robin-So much food, so little time!.</h4>")
+
+    var marker4 = new mapboxgl.Marker()
+        .setLngLat([-98.600746, 29.606964]) // 29.606964, -98.600746
+        .setPopup(popup4)
+        .addTo(map)
+    // Javier's new marker /////
+    ////////////////////////// End of Red Robin Location /////////////////////////
+
+    marker.setPopup(alamoPopup)
+
+    document.addEventListener("keyup", function(e) {
+        if (e.key === " ") {
+            let rrMark = new mapboxgl.Marker()
+                .setLngLat([-97.6789, 30.5083])
+                .addTo(map);
+        }
+    });
+//////////////////////////////////////////////////////////////////////////////////
+    var shapes = ['popup1', 'popup1', 'popup1', 'popup1'];
+
+    // loop through the array and log the values
+    shapes.forEach(function(shape) {
+        console.log('Here is a lovely shape: ' + shape + '.');
+    });
+///////////////////////////////////////////////////////////////////////////////////
+
+    geocode("19179 Blanco Rd #101, San Antonio, TX 78258", mapboxKey).then(function(data) {
+        console.log(data);
+        new mapboxgl.Marker().setLngLat(data).addTo(map);
+    });
+
+    reverseGeocode({lat: 51.2194, lng: 4.4025}, mapboxKey).then(function(data) {
+        console.log(data);
+        document.querySelector("#reverseGeo").innerHTML = data;
+    })
+
+</script>
 </body>
 </html>
