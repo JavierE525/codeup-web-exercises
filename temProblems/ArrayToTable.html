@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Coffee Table</title>
 </head>
 <body>
-$END$
+<script>
+        function myFunction() {
+            var tbl = document.getElementById('myTable');
+            alert(tbl);
+        }
+</script>
+<input type="button" value="Add to Cart" onclick="myFunction();" />
+<h1>My Shopping Cart</h1>
+    <table id='myTable'border = 1>
+        <tr>
+            <td>Product ID</td>
+            <td>Product Description</td>
+            <td>Quntity</td>
+            <td>Ordered</td>
+        </tr>
+    </table>
 </body>
 </html>
