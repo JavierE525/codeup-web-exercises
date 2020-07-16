@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuerry Introduction</title>
+</head>
+<!--Id Selectors-->
+<!--Create content in your HTML file using at least the following elements: -->
+<!--h1, p, ul, li, div.-->
+<!--Add several attributes to your elements; you will need both id and class attributes.-->
+<!--Use jQuery to select an element by the id. Alert the contents of the element.-->
+<!--Update the jQuery code to select and alert a different id.-->
+<!--Use the same id on 2 elements. How does this change the jQuery selection?-->
+<!--Remove the duplicate id. Each id should be unique on that page.-->
+
+
+    <h1 id="codeup1">Hello Codeup</h1>
+
+    <p class="lorem">Lorem ipsum dolor sit</p>
+    <p class="important">This is also very important.</p>
+
+    <p class="code"></p>
+
+    <p id="hello"></p>
+
+    <p id="hello"></p>
+
+    <ul>
+        <li>This list</li>
+        <li>is bulleted</li>
+    </ul>
+
+    <ol>
+        <li>This list</li>
+        <li>is numbered</li>
+    </ol>
+
+    <div>
+        <p>Any kind of content here.</p>
+    </div>
+
+    <input name="myInput" />
+
+
+
+
+
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    $("ul").css("color", "blue"); // colors the text blue
+    $("ol").css("color", "red"); // colors the text red
+    $("div").css("color", "blue"); // colors the text blue
+    $('.lorem').css('background-color', 'beige ');// background colors for the text beige
+    $("[name='myInput']").value("Test"); // sets input value to "Test"
+
+    $('#codeup1').css('background-color', 'lightgreen');
+    $('.important').css('background-color', 'yellow');
+
+    var contents = $('#codeup').html();
+    alert(contents);
+
+
+    $(document).ready(function () {
+        //js goes here that will execute when the page has finished loading
+        alert('Ready to Go!')
+    })
+</script>
+</body>
+</html>
