@@ -12,6 +12,8 @@
 <body>
 <h1 id="daily">Daily Routine</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aspernatur consectetur deleniti doloremque ducimus earum harum illo molestias neque non obcaecati, porro provident repellendus suscipit tempore voluptate? Facere, hic.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque distinctio nesciunt qui? Aliquam, aspernatur cupiditate dolor, dolorem id maxime mollitia pariatur quo quos recusandae, reprehenderit sapiente temporibus tenetur totam vel?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorem dolorum enim est excepturi fuga ipsum labore nulla, odit optio ratione, reprehenderit rerum sunt! Cum distinctio eius enim perspiciatis sed.</p>
 <h2>Morning</h2>
 <ul>
     <li class="hygeine">Wash Face</li>
@@ -42,13 +44,142 @@
 <script src="js/jquery-2.2.4.js"></script>
 <script>
     $(document).ready(function(){
-        console.log("Ready to roll");
+        console.log("Ready to Rock-and-Roll");
         // alert($('#coffee').html());
-        // $('.codeup').css('border','1px solid red');
-        $('li').css('font-size', '20px');
+        $('.codeup').css('border','2px solid blue');
+        $('li').css('font-size', '15px');
         $('h1, p, .codeup').addClass('highlighted');
         alert($('h1').html());
     });
 </script>
 </body>
 </html>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    &lt;!&ndash; The above 3 meta tags must come first in the head; any other head content must come after these tags &ndash;&gt;-->
+<!--    <title>jQuery 101 Template</title>-->
+<!--    &lt;!&ndash; Latest compiled and minified CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+<!--    &lt;!&ndash; Optional theme &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+
+<!--    <style type="text/css">-->
+<!--        .jumbotron {text-align: center;}-->
+<!--        .fuchsia {background-color: fuchsia}-->
+<!--        .highlighted {background-color: #eeff00}-->
+<!--        .redoutline {border: 1px solid red}-->
+<!--    </style>-->
+
+<!--</head>-->
+<!--<body>-->
+
+<!--    -->
+<!--<main class="container">-->
+<!--    <header class="jumbotron">-->
+<!--        <h1>Let's have Fun</h1>-->
+<!--        <button id="btn1" class="btn btn-primary">#btn1</button>-->
+<!--        <button id="btn2" class="btn btn-default">#btn2</button>-->
+<!--        <button id="btn3" class="btn btn-primary">#btn3</button>-->
+<!--        <button id="btn4" class="btn btn-default">#btn4</button>-->
+<!--    </header>-->
+<!--    <section class="col-xs-3">-->
+<!--        <div id="panel1" class="panel panel-primary">-->
+<!--            <div class="panel-heading">-->
+<!--                #panel1-->
+<!--            </div>-->
+<!--            <div class="panel-body">-->
+<!--                Content-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="col-xs-3">-->
+<!--        <div id="panel2" class="panel panel-default">-->
+<!--            <div class="panel-heading">-->
+<!--                #panel2-->
+<!--            </div>-->
+<!--            <div class="panel-body">-->
+<!--                Content-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="col-xs-3">-->
+<!--        <div id="panel3" class="panel panel-primary">-->
+<!--            <div class="panel-heading">-->
+<!--                #panel3-->
+<!--            </div>-->
+<!--            <div class="panel-body">-->
+<!--                Content-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="col-xs-3">-->
+<!--        <div id="panel4" class="panel panel-default">-->
+<!--            <div class="panel-heading">-->
+<!--                #panel4-->
+<!--            </div>-->
+<!--            <div class="panel-body">-->
+<!--                Content-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--</main>-->
+<!--<script src="js/jquery-2.2.4.js"></script></script>-->
+<!--&lt;!&ndash; Latest compiled and minified Bootstrap JavaScript &ndash;&gt;-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+
+
+<!--<script>-->
+<!--    //  vanilla js-->
+<!--    //      document.getElementById("btn1").addEventListener("click", function(){-->
+<!--    //        document.getElementById("panel1").classList.add("highlighted");-->
+<!--    //      })-->
+
+<!--    $(document).ready(function(){-->
+<!--        "use strict";-->
+
+<!--        // $(".jumbotron").mousemove(function(e){-->
+<!--        //   // e.preventDefault();-->
+<!--        //   console.log(e);-->
+<!--        // })-->
+
+<!--        let toggleFuchsia = function () {-->
+<!--            // conditional to toggle the class on/off-->
+<!--            if ($(this).hasClass("fuchsia")) {-->
+<!--                $(this).removeClass("fuchsia");-->
+<!--            } else {-->
+<!--                $(this).addClass("fuchsia");-->
+<!--            }-->
+<!--        }-->
+
+<!--        // jquery equivalent to line 80-->
+<!--        $('#btn1').click(function(){-->
+<!--            $("#panel1").addClass("highlighted");-->
+<!--        });-->
+<!--        $('#btn2').dblclick(function () {-->
+<!--            $("#panel2").addClass("redoutline");-->
+<!--        });-->
+<!--        $('h1').dblclick(toggleFuchsia);-->
+
+<!--        $('.panel').dblclick(toggleFuchsia);-->
+
+<!--        $('.panel').hover(-->
+<!--            function(){-->
+<!--                console.log("Someone came to town")-->
+<!--                $(this).addClass("redoutline");-->
+<!--            },-->
+<!--            function(){-->
+<!--                console.log("Someone left town")-->
+<!--                $(this).removeClass("redoutline");-->
+<!--            }-->
+<!--        );-->
+
+<!--    });-->
+
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
