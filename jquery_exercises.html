@@ -2,67 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>jQuerry Introduction</title>
+    <title>jQuery</title>
+    <style>
+        .highlighted {
+            background-color: #BFD45D;
+        }
+    </style>
 </head>
-<!--Id Selectors-->
-<!--Create content in your HTML file using at least the following elements: -->
-<!--h1, p, ul, li, div.-->
-<!--Add several attributes to your elements; you will need both id and class attributes.-->
-<!--Use jQuery to select an element by the id. Alert the contents of the element.-->
-<!--Update the jQuery code to select and alert a different id.-->
-<!--Use the same id on 2 elements. How does this change the jQuery selection?-->
-<!--Remove the duplicate id. Each id should be unique on that page.-->
-
-
-    <h1 id="codeup">Hello from CODEUP!</h1>
-
-    <p class="lorem">Lorem ipsum dolor sit</p>
-    <p class="important">This is also very important.</p>
-
-    <p class="code"></p>
-
-    <p id="hello">Now is the time for all good men to come to the aid of their country!</p>
-
-    <p id="hello1">I have the same ID as the paragraph above
-        and I did not get any background color</p>
-
-    <ul>
-        <li>This list</li>
-        <li>is bulleted</li>
-    </ul>
-
-    <ol>
-        <li>This list</li>
-        <li>is numbered</li>
-    </ol>
-
-    <div>
-        <p>Any kind of content here.</p>
-    </div>
-
+<body>
+<h1 id="daily">Daily Routine</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aspernatur consectetur deleniti doloremque ducimus earum harum illo molestias neque non obcaecati, porro provident repellendus suscipit tempore voluptate? Facere, hic.</p>
+<h2>Morning</h2>
+<ul>
+    <li class="hygeine">Wash Face</li>
+    <li id="coffee">Ahhhh, Coffee</li>
+    <li class="health">Stretch</li>
+    <li id="baby">Water Plants</li>
+    <li class="health">Workout</li>
+    <li>Breakfast</li>
+    <li class="health hygeine">Brush Teeth</li>
+</ul>
+<h2>Daily</h2>
+<ul>
+    <li class="online">Sign Into Zoom</li>
+    <li id="codeup" class="online">Codeup Classroom</li>
+    <li class="codeup">Code Code Code</li>
+</ul>
+<h2>Evening</h2>
+<ul>
+    <li>Log Off/Close Laptop</li>
+    <li class="health">Dinner</li>
+    <li class="online">TikTok/Insta/Twitter</li>
+    <li class="codeup">Review Lectures</li>
+    <li id="beer">Crack a beer</li>
+    <li class="health hygeine">Brush Teeth</li>
+    <li class="hygeine">Wash Face</li>
+    <li>Read</li>
+</ul>
 <script src="js/jquery-2.2.4.js"></script>
 <script>
-
-
-    $(document).ready(function () {
-        //js goes here that will execute when the page has finished loading
-        alert('Ready to Go!')
-
-        $("p").css("color", "blue",).hide(1000).show(1000).fadeOut(2000).fadeIn(2000); // colors the text blue
-        $("ul").css("color", "blue"); // colors the text blue
-        $("ol").css("color", "red"); // colors the text red
-        $("div").css("color", "blue"); // colors the text blue
-        $('.lorem').css('background-color', 'beige ');// background colors for the text beige
-
-        $('#hello1').css('background-color', 'grey');
-        $('#hello').css('background-color', 'grey');
-        $('#codeup').css('background-color', 'lightgreen',).fadeOut(3000).fadeIn(3000).fadeOut(3000).fadeIn(3000);;
-        $('.important').css('background-color', 'yellow');
-
-        var contents = $('#codeup').html();
-        alert(contents);
-
-    })
+    $(document).ready(function(){
+        console.log("Ready to roll");
+        // alert($('#coffee').html());
+        // $('.codeup').css('border','1px solid red');
+        $('li').css('font-size', '20px');
+        $('h1, p, .codeup').addClass('highlighted');
+        alert($('h1').html());
+    });
 </script>
 </body>
 </html>
