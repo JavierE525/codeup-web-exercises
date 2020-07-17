@@ -14,16 +14,17 @@
 <!--Remove the duplicate id. Each id should be unique on that page.-->
 
 
-    <h1 id="codeup1">Hello Codeup</h1>
+    <h1 id="codeup">Hello from CODEUP!</h1>
 
     <p class="lorem">Lorem ipsum dolor sit</p>
     <p class="important">This is also very important.</p>
 
     <p class="code"></p>
 
-    <p id="hello"></p>
+    <p id="hello">Now is the time for all good men to come to the aid of their country!</p>
 
-    <p id="hello"></p>
+    <p id="hello1">I have the same ID as the paragraph above
+        and I did not get any background color</p>
 
     <ul>
         <li>This list</li>
@@ -39,30 +40,28 @@
         <p>Any kind of content here.</p>
     </div>
 
-    <input name="myInput" />
-
-
-
-
-
 <script src="js/jquery-2.2.4.js"></script>
 <script>
-    $("ul").css("color", "blue"); // colors the text blue
-    $("ol").css("color", "red"); // colors the text red
-    $("div").css("color", "blue"); // colors the text blue
-    $('.lorem').css('background-color', 'beige ');// background colors for the text beige
-    $("[name='myInput']").value("Test"); // sets input value to "Test"
-
-    $('#codeup1').css('background-color', 'lightgreen');
-    $('.important').css('background-color', 'yellow');
-
-    var contents = $('#codeup').html();
-    alert(contents);
 
 
     $(document).ready(function () {
         //js goes here that will execute when the page has finished loading
         alert('Ready to Go!')
+
+        $("p").css("color", "blue",).hide(1000).show(1000).fadeOut(2000).fadeIn(2000); // colors the text blue
+        $("ul").css("color", "blue"); // colors the text blue
+        $("ol").css("color", "red"); // colors the text red
+        $("div").css("color", "blue"); // colors the text blue
+        $('.lorem').css('background-color', 'beige ');// background colors for the text beige
+
+        $('#hello1').css('background-color', 'grey');
+        $('#hello').css('background-color', 'grey');
+        $('#codeup').css('background-color', 'lightgreen',).fadeOut(3000).fadeIn(3000).fadeOut(3000).fadeIn(3000);;
+        $('.important').css('background-color', 'yellow');
+
+        var contents = $('#codeup').html();
+        alert(contents);
+
     })
 </script>
 </body>
