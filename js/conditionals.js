@@ -1,7 +1,7 @@
 "use strict";
 
 /* ########################################################################## */
-
+// prompt("you reached the conditional.js page");
 /**
  * TODO:
  * Create a function named `analyzeColor` that accepts a string that is a color
@@ -19,12 +19,36 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
+// var randomColor = colors[Math.floor(Math.random() * colors.length)];
+//
+// // var randomColor = prompt('Please enter a color: ');
+//
+// switch(randomColor) {
+//     case "blue":
+//         alert("You picked blue");
+//         break;
+//     case "red":
+//         alert("you picked red");
+//         break;
+//     case "cyan":
+//         alert("you picked cyan");
+//         break;
+//     default:
+//         alert("you did not choose well");
+//         break;
+// }
+
+// function analyzeColor(str) {
+// alert("You chose the color: " + userInput);
+// }
+
 
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
+
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
@@ -33,10 +57,67 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
  */
 
+var randomColor = colors[Math.floor(Math.random() * colors.length)];
+//
+// switch(randomColor) {
+//     case "red":
+//         alert("You picked red");
+//         break;
+//     case "orange":
+//         alert("you picked orange");
+//         break;
+//     case "yellow":
+//         alert("you picked yellow");
+//         break;
+//     case "green":
+//         alert("You picked green");
+//         break;
+//     case "blue":
+//         alert("you picked blue");
+//         break;
+//     case "indigo":
+//         alert("you picked indigo");
+//         break;
+//     case "violet":
+//         alert("you picked violet");
+//         break;
+//     default:
+//         alert("you did not choose well");
+//         break;
+// }
+
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
+var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+// switch(randomColor) {
+//     case "red":
+//         alert("You picked red");
+//         break;
+//     case "orange":
+//         alert("you picked orange");
+//         break;
+//     case "yellow":
+//         alert("you picked yellow");
+//         break;
+//     case "green":
+//         alert("You picked green");
+//         break;
+//     case "blue":
+//         alert("you picked blue");
+//         break;
+//     case "indigo":
+//         alert("you picked indigo");
+//         break;
+//     case "violet":
+//         alert("you picked violet");
+//         break;
+//     default:
+//         alert("you did not choose well");
+//         break;
+// }
 
 /**
  * TODO:
@@ -93,3 +174,26 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+
+// var confirmed = confirm('Would you like to enter a number? ');
+// var userInput = prompt('Please enter your number: ');
+
+// console.log(userInput);
+// console.log('The user entered: ' + parseInt(userInput));
+let num = 100;
+
+// alert("Your number pluss 100 is: " +  (num + parseInt(userInput)));
+// if (userInput < 0) {
+//     alert('and, our number was negative.');
+// } else if (ans % 2 != 0) {
+//     alert('and, you number was odd');
+// } else if(ans % 2 === 0) {
+//     alert('and, your number is even');
+// } else {
+//     alert('You did not choose a number');
+// }
+var num1 = 10;
+let increment = function() {
+    console.log(increment(num));
+}
