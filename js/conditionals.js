@@ -193,7 +193,15 @@ let num = 100;
 // } else {
 //     alert('You did not choose a number');
 // }
-var num1 = 10;
-let increment = function() {
-    console.log(increment(num));
+//
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet',"black","white"];
+console.log(colors.indexOf("red"));
+console.log(colors.lastIndexOf("red"));
+for(let i = 0 ; i < colors.length; i++){
+    if(colors[i] == "red"){
+        console.log(i);
+    }
 }
+// console.log(colors.slice(0,5));
+// console.log(colors.slice(colors.indexOf("red"),colors.indexOf("blue")+1));
+// console.log(colors.slice(colors.indexOf("yellow")));
