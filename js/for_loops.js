@@ -1,116 +1,90 @@
 ///////////////////showMultiplicationTable #1////////////////////
-let ShowMultiplicationTable = function(num) {
- for (let i = 1; i <= 10; i++)
-     console.log(num + " x " + i + " = " + (i * num));
+// Create a function named showMultiplicationTable that accepts a number
+// and console.logs the multiplication table for that number
+// (just multiply by the numbers 1 through 10)
+//
+// For example, showMultiplicationTable(7) should output
+// 7 x 1 = 7
+// 7 x 2 = 14
+// 7 x 3 = 21
+// 7 x 4 = 28
+// 7 x 5 = 35
+// 7 x 6 = 42
+// 7 x 7 = 49
+// 7 x 8 = 56
+// 7 x 9 = 63
+// 7 x 10 = 70
 
-}
-ShowMultiplicationTable(7);
+// let showMultiplicationTable = function(num) {
+//  for (let i = 1; i <= 10; i++)
+//      console.log(num + " x " + i + " = " + (i * num));
+//
+// }
+// showMultiplicationTable(8);
 
 /////////////////////////for Loop #2/////////////////////////////
-// Use a for loop and the code from the previous lessons to
-// generate 10 random numbers between 20 and 200 and output
-// to the console whether each number is odd or even.
-// For example:
-// let a = "Your EVEN number: ";
-// let b = "Your ODD number: ";
-// for (let i = 0; i < 10)
+// Use a for loop and the code from the previous lessons to generate
+// 10 random numbers between 20 and 200 and output to the console
+// whether each number is odd or even. For example:
+//
+// 123 is odd
+// 80 is even
+// 24 is even
+// 199 is odd
+// ...
 
-// if ((x % 2) !== 0) {
-//     console.log("Here is an odd number: " + x)
+// for (let i = 0; i < 10; i++) {
+//
+//     let random = Math.floor(Math.random() * 200) + 1;
+//     if (random % 2 === 0) {
+//           //testing if the number is even: (aNumber % 2 will give a result of 0)
+//           // then the number is even:
+//         console.log(random + " is even");
+//     } else {
+//         console.log(random + " is odd");
+//          // everything that is not even will end up here, and we console log it.
+//     }
 // }
+
 ///////////////////////for Loop #3////////////////////////////////////
 // Create a for loop that uses console.log to create the
 // output shown below.
 
 // for (let i = 1; i <= 9; i++) {
-//     var a = 7 * i;
-//     // console.log(i);
-//     // console.log(i + " = " + a);
-//     console.log(i);
+//     // we are only going to print out our answer (((9))) times.
+//     let str = "";
+//     // creating an empty string.
+//     for (let j = 1; j <= i; j++) {
+//         // looping as long as i is less than or equal to i.
+//         str += i;
+//         // str = str + 1.
+//     }
+//     console.log(str);
 // }
-// console.log("We are done!");
-
 ///////////////////////for Loop #4////////////////////////////////////
 // Create a for loop that uses console.log to create the
 // output shown below.
-// 1
-// 22
-// 333
-// 4444
-// 55555
-// 666666
-// 7777777
-// 88888888
-// 999999999
 
-// for (let i = 1; i <= 9; i++) {
-//     var a = 7 * i;
-//     // console.log(i);
-//     // console.log(i + " = " + a);
+// for (let i = 100; i > 0; i -=5) {
+//     // starting at 100, we are decrementing by 5 each time the loop runs.
 //     console.log(i);
-//     // console.log(a);
 // }
-// console.log("We are done!");
 
-///////////////////////for Loop #5//////////////////////////
-// for (let i = 1; i <= 21; i++) {
-//     var a = 5;
-//     var b = (101 - i);
-//     // console.log(i);
-//     console.log(b);
-//     // console.log('7 x '+ i + " = " + a);
-// }
-// console.log("We are done!");
+// converting from a string to an array //
 
-///////////////////////for Loop #6//////////////////////////
-// let evenNumber = "is an even number: "
-// let oddNumber = " is an odd number: "
-//
-// for (var i = 0; i < 10; i++) {
-//     console.log("Round : " + i);
-//     let n =Math.floor(Math.random() * 180) + 20;
-//
-//     if (n % 2 === 0) {
-//         console.log("Your number: " + n + " " + evenNumber);
-//     } else {
-//         console.log("Your number #: " + n + " " + oddNumber);
-//     }
-// }
-//////////////////////////////
-// let evenNumber = "is an even number: "
-// let oddNumber = " is an odd number: "
-// for (let i = 1; i <= 21; i++) {
-//     let b = (101 - i);
-//     console.log(b);
-// }
-// console.log("We are done!");
+var namesString = "Joe,Bob,Sally";
+console.log(namesString);
+// Joe,Bob,Sally
+var namesArray = namesString.split(',');
+console.log(namesArray);
 
+// convering from an array to a string //
 
+var namesArray = ['Joe', 'Bob', 'Sally', 'Jim'];
+console.log(namesArray);
+// ['Joe', 'Bob', 'Sally']
 
+var namesString = namesArray.join(',');
 
-
-///////////////////////////////////////////////////////
-///////////////   PRACTICE PROBLEMS  //////////////////
-///////////////////////////////////////////////////////
-// let multiply = function (a,b) {
-//     let answer = 0;
-//      while (b> 0) {
-//          b--;
-//          answer += a;
-//      }
-//      return answer;
-//
-// }
-// console.log(multiply(3, 7));
-//
-// let addition = function (a,b) {
-//     for (; a > 0; a--)
-//     {
-//         b++;
-//     }
-//         return b;
-//     }
-//
-// console.log(addition(7,2));
-
-
+console.log(namesString);
+// Joe,Bob,Sally
