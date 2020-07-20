@@ -49,15 +49,16 @@
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
 
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
 /**
  * TODO:
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message every time you refresh the page
  */
 
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+// var randomColor = colors[Math.floor(Math.random() * colors.length)];
 //
 // switch(randomColor) {
 //     case "red":
@@ -202,6 +203,10 @@ for(let i = 0 ; i < colors.length; i++){
         console.log(i);
     }
 }
-// console.log(colors.slice(0,5));
+console.log(colors);
+// console.log(colors.slice(0,5)); We get the first color, to the 4th color.
 // console.log(colors.slice(colors.indexOf("red"),colors.indexOf("blue")+1));
+// console.log(colors.slice(colors.indexOf("orange"), colors.indexOf("black")+1));
+// the code above will return the values specified in the "slice" parameters.
+
 // console.log(colors.slice(colors.indexOf("yellow")));
