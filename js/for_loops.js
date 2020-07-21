@@ -72,19 +72,27 @@
 
 // converting from a string to an array //
 
-var namesString = "Joe,Bob,Sally";
-console.log(namesString);
-// Joe,Bob,Sally
-var namesArray = namesString.split(',');
-console.log(namesArray);
+// var namesString = "Joe,Bob,Sally";
+// console.log(namesString);
+// // Joe,Bob,Sally
+// var namesArray = namesString.split(',');
+// console.log(namesArray);
+//
+// // convering from an array to a string //
+//
+// var namesArray = ['Joe', 'Bob', 'Sally', 'Jim'];
+// console.log(namesArray);
+// // ['Joe', 'Bob', 'Sally']
+//
+// var namesString = namesArray.join(',');
+//
+// console.log(namesString);
+// // Joe,Bob,Sally
+// redirect browser to google.com
 
-// convering from an array to a string //
+"use strict";
+(function() {
+    var btnToClick = document.getElementById('btnToClick');
 
-var namesArray = ['Joe', 'Bob', 'Sally', 'Jim'];
-console.log(namesArray);
-// ['Joe', 'Bob', 'Sally']
-
-var namesString = namesArray.join(',');
-
-console.log(namesString);
-// Joe,Bob,Sally
+    console.log(btnToClick); // prints <button id="btnToClick">Click Me</button>
+})();
