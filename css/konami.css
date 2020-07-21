@@ -1,10 +1,9 @@
 .mainText {
     color: gold;
     text-align: center;
+    text-shadow: 4px 4px 6px #222222;
 }
 
 body {
     background-position: bottom;
-    background-image: ('img/indoor-brick-wall-texture.jpg')
-
 }
