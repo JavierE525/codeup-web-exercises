@@ -1,4 +1,4 @@
-// a key map of allowed keys
+// allowed keys
 var allowedKeys = {
     37: 'left',
     38: 'up',
@@ -32,16 +32,13 @@ document.addEventListener('keydown', function(e) {
             activateCheats();
             konamiCodePosition = 0;
         }
-    } else {
+        } else {
         konamiCodePosition = 0;
-    }
+        }
 });
-
 function activateCheats() {
     document.body.style.backgroundImage = "url('img/gamer1.jpg')";
-
-    var audio = new Audio('sounds/Depth Charge.mp3');
+    var audio = new Audio('sounds/alien.mp3');
     audio.play();
-
-    alert("Congratulations! \n 30 lives added");
+    alert("Cheats activated! \n 30 lives added");
 }
