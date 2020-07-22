@@ -22,7 +22,7 @@ $('<button/>')
     .click(function () { alert('hi'); });
 $('<button>Test</button>').click(function () { alert('hi'); });
 
-$("main").prepend('<h1>The pug image is too big, halp!</h1><img src="../img/gamer1.jpg" alt="cool disney villain Ratcliffe"><img src="img/ratcliffe.jpg" alt="cool disney villain Ratcliffe"><img src="img/glitter.jpg" alt="cool disney villain Ratcliffe"><h1>SEE HOW HE GLITTER!</h1><img src="img/pug.jpg" alt="a good doggie" style="display: inline-block">');
+$("main").prepend('<h1>Text Here</h1><img src="../img/gamer1.jpg" alt="cool disney villain Ratcliffe"><img src="img/ratcliffe.jpg" alt="cool disney villain Ratcliffe"><img src="img/glitter.jpg" alt="cool disney villain Ratcliffe"><h1>SEE HOW HE GLITTER!</h1><img src="img/pug.jpg" alt="a good doggie" style="display: inline-block">');
 
 $("h1").click(function() {
     if ($('body').hasClass("dark-mode")) {
@@ -53,6 +53,14 @@ $(document).keypress(function(e) {
 
 $("#btn-1").click(function() {
     $("h3").toggleClass("invisible");
+});
+
+
+$('#national-parks-toggle').click(function() {
+    $('#national-parks').hide();
+});
+$('#state-parks-texas-toggle').click(function() {
+    $('#state-parks-texas').hide();
 });
 
 
