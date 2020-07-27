@@ -16,6 +16,13 @@ $(".big-title").dblclick(function () {
 //     .append('<img src="img/pug.jpg" alt="a good doggie" style="display: inline-block">')
 //     .append(holdThis);
 
+//  Open the file named jquery_faq.html for editing. Commit all changes to GitHub.
+//  Under the FAQ, add 3 unordered lists like above. Each list should contain a national park name in
+//  an h3 element, and a ul of 4 facts about the park.
+//  Create a button that, when clicked, makes the last li in each ul have a yellow background.
+//  When any h3 is clicked, the lis underneath it should be bolded. Use font-weight: bold to achieve this.
+//  When any list item is clicked, first li of the parent ul should have a font color of blue.
+
 
 $('<button/>')
     .text('Test')
