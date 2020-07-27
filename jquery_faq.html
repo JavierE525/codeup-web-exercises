@@ -1,78 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>jquery faq</title>
+    <meta charset="UTF-8">
+    <title>FAQ</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
     <style>
+        * {
+            font-family: 'Fira Code', monospace;
+            line-height: 1.5em;
+        }
         .invisible {
             visibility: hidden;
         }
+        .highlighter {
+            background: #ef0;
+        }
+        .emboldened {
+            font-weight: bold;
+        }
+        .enbluened {
+            color: #373fff;
+        }
+        body {
+            font-size: 1.25em;
+        }
+        dt {
+            font-weight: bold;
+        }
+        dd {
+            margin-bottom: 1.2em;
+        }
+        .styler {
+            position: relative;
+            top: 0;
+            left: 0;
+            transition: 1s;
+            font-size: 1em;
+            border-radius: 5px;
+            background-color: #3B94D9;
+            border: #30447B solid 5px;
+            color: aliceblue;
+            padding: 10px;
+            box-shadow: 5px 5px 10px black;
+        }
+        .styler:hover {
+            background-color: brown;
+            color: blanchedalmond;
+            border-color: orangered;
+            box-shadow: 0 0 5px black;
+            top: 5px;
+            left: 5px;
+        }
     </style>
-
 </head>
 <body>
-<!-- Create a new file named jquery_faq.html. Commit all changes to GitHub.-->
-<!-- In a HTML structure, create a definition list containing 10 FAQs about national parks.-->
-<!-- Add a class to all dd elements named invisible.-->
-<!-- Create some CSS rules that sets elements with the invisible class to visibility: hidden;.-->
-<!-- Update the page with jQuery to add a link that toggles the class invisible on and off for all dd elements.-->
+<h1>Multi-purpose Stadiums in the United States</h1>
+<dl>
+    <dt>Bud and Jackie Sellick Bowl</dt>
+    <dd>Located in Indianapolis, IN</dd>
 
-<a href="#" id="removed">Click to toggles the class invisible on and off.</a>
+    <dt>Don Shula Stadium</dt>
+    <dd>Located in University Park, OH</dd>
 
-<h1>Ten FAQs about National Parks</h1>
-    <dl>
-        <dt>Question 1</dt>
-        <dd>Now is the time for all good men to come to the aid of their country.</dd>
+    <dt>Ernest W. Spangler Stadium</dt>
+    <dd>Located in Boiling Springs, NC</dd>
 
-        <dt>Question 2</dt>
-        <dd>Now is the time for all good men to come to the aid of their country.</dd>
+    <dt>J. Lawrence Walkup Skydome</dt>
+    <dd>Located in Flagstaff, AZ</dd>
 
-        <dt>OQuestion 3</dt>
-        <dd>Now is the time for all good men to come to the aid of their country.</dd>
+    <dt>Lake Myrtle Sports Complex</dt>
+    <dd>Located in Auburndale, FL</dd>
 
-        <dt>Question 4</dt>
-        <dd>Now is the time for all good men to come to the aid of their country.</dd>
+    <dt>Oakland–Alameda County Coliseum,</dt>
+    <dd>Located in Oakland, CA</dd>
 
-        <dt>Question 5</dt>
-        <dd>Now is the time for all good men to come to the aid of their country.</dd>
+    <dt>Pine Bowl</dt>
+    <dd>Located in Loretto, PA</dd>
 
-        <dt>Question 6</dt>
-        <dd>Now is the time for all good men to come to the aid of their country.</dd>
+    <dt>Rice–Totten Stadium</dt>
+    <dd>Located in  Itta Bena, Mississippi</dd>
 
-        <dt>Question 7</dt>
-        <dd>ANow is the time for all good men to come to the aid of their country.</dd>
+    <dt>Saluki Stadium</dt>
+    <dd>Located in Carbondale, IL</dd>
 
-        <dt>Question 8</dt>
-        <dd>Now is the time for all good men to come to the aid of their country.</dd>
+    <dt>Welcome Stadium</dt>
+    <dd>Located in Dayton, OH</dd>
+</dl>
 
-        <dt>OQuestion 9</dt>
-        <dd>Now is the time for all good men to come to the aid of their country.</dd>
+<button class="styler" id="btn-1">Click to change some things!</button>
+<hr>
 
-        <dt>OQuestion 10</dt>
-        <dd>Now is the time for all good men to come to the aid of their country.</dd>
-    </dl>
-    <script src="js/jquery-3.5.1.js"></script>
-    <script>
-        "use strict"
-        $(document).ready(function () {
-            $('dd').addClass('invisible');
+<h1>National Parks of Iceland</h1>
+<h3>Snæfellsjökull</h3>
+<ul>
+    <li>Stratovolcano</li>
+    <li>Sometimes it may be seen from the city of Reykjavík over Faxa Bay, at a distance of 120 km.</li>
+    <li>The mountain is one of the most famous sites of Iceland, primarily due to the novel Journey to the Center of the Earth (1864) by Jules Verne, in which the protagonists find the entrance to a passage leading to the center of the earth on Snæfellsjökull.</li>
+    <li>In August 2012 the summit was ice-free for the first time in recorded history.</li>
+</ul>
 
-            $("#removed").click(function(){
-                $("dd").toggleClass("invisible");
+<h3>Vatnajökull</h3>
+<ul>
+    <li>Vatnajökull National Park is divided into four territories.</li>
+    <li>Vatnajökull is Europe's largest glacier outside the arctic, with a surface area of 8,100 km2.</li>
+    <li>It encompasses all of Vatnajökull glacier and extensive surrounding areas. These include the national parks previously existing at Skaftafell in the southwest and Jökulsárgljúfur in the north.</li>
+    <li>On 5 July 2019, Vatnajökull National Park was inscribed as a World Heritage Site.</li>
+</ul>
+
+<h3>Þingvellir</h3>
+<ul>
+    <li>The National Gallery of Iceland owns more than 150 paintings by Ásgrímur Jónsson that have Þingvellir as their subject.</li>
+    <li>The name Þingvellir is derived from the Old Norse Þingvǫllr, from þing (“thing, assembly”) and vǫllr (“field”), meaning assembly fields.</li>
+    <li>Þingvellir is associated with the Althing, the national parliament of Iceland, which was established at the site in 930 AD.</li>
+    <li>Þingvellir was designated as a World Heritage Site in 2004.</li>
+</ul>
+
+<button class="styler" id="btn-2">Click me to highlight last list item</button>
+
+<script src="js/jquery-3.5.1.js"></script>
+<script>
+    $(document).ready(function() {
+        $("dd").addClass("invisible");
+
+        $("#btn-1").click(function() {
+            $("dd").toggleClass("invisible");
+        });
+
+        $("dt").click(function () {
+            $(this).toggleClass("highlighter");
+        });
+
+        $("#btn-2").click(function() {
+            $("ul").each(function() {
+                $(this).children().last().toggleClass("highlighter");
             });
         });
 
+        $("h3").click(function() {
+            $(this).next().children().toggleClass("emboldened");
+        });
 
-    </script>
+        $("li").click(function() {
+            $(this).parent().children().first().toggleClass("enbluened");
+        })
+    });
+</script>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
