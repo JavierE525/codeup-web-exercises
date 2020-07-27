@@ -7,28 +7,28 @@
 <body>
     <script>
 
-        var coffees = [
-        {id: 1, name: 'Light City', roast: 'light'},
-        {id: 2, name: 'Half City', roast: 'light'},
-        {id: 3, name: 'Cinnamon', roast: 'light'},
-        {id: 4, name: 'City', roast: 'medium'},
-        {id: 5, name: 'American', roast: 'medium'},
-        {id: 6, name: 'Breakfast', roast: 'medium'},
-        {id: 7, name: 'High', roast: 'dark'},
-        {id: 8, name: 'Continental', roast: 'dark'},
-        {id: 9, name: 'New Orleans', roast: 'dark'},
-        {id: 10, name: 'European', roast: 'dark'},
-        {id: 11, name: 'Espresso', roast: 'dark'},
-        {id: 12, name: 'Viennese', roast: 'dark'},
-        {id: 13, name: 'Italian', roast: 'dark'},
-        {id: 14, name: 'French', roast: 'dark'},
-        ];
 
-          for (var i = 0; i <= coffees.length; (i++)-1) {
-            console.log(coffees[i]);
-          }
 
     </script>
 
 </body>
 </html>
+$('#add-to-list').click(function() { 
+    var sandwich = $('#input').val(); 
+    console.log(sandwich); 
+    $('#favorite-food').append('<li>' + sandwich + '</li>'); 
+    });  
+        $('#change-me').dblclick(function() { 
+        $('#change-me').toggleClass('dbl'); 
+        }); 
+            $('#change-cohort').click(function() { 
+                var newCohort = $('#cohort-name').val(); 
+            $('#my-cohort').html(""); 
+            $('#my-cohort').html(newCohort); 
+            }); 
+        $('#change-to-red').click(function() { 
+        $('#my-cohort').toggleClass('highlight'); 
+        }); 
+    setTimeout(function() { 
+$('.container').css({'background-color': 'pink'}); 
+}, 4000); 
