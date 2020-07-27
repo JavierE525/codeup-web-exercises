@@ -22,9 +22,9 @@ $.get("http://api.openweathermap.org/data/2.5/onecall", {
         $(`#weatherDate` + i).html(date.toDateString());
         console.log(data.daily[i].dt);
 
-        // weather icon for each day
-        $(`#wind` + i).html(wind + " MPH")
-        console.log(data.weather[i].incon);
+        // weather icon
+        // $(`icon` + i).html(icon)
+        // console.log(data.weather[i].incon);
 
         // temp
         let lowTemp = data.daily[i].temp.min;
