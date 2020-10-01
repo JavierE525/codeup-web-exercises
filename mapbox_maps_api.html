@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>First Mapbox Map</title>
     <!-- Mapbox CSS -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet'/>
     <!-- Custom CSS -->
     <style>
         #map {
@@ -17,7 +17,11 @@
 <body>
 
 
-<h2>First Mapbox Map!</h2>
+<h2>Weather Map</h2>
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<!--<h3 id="reverseGeo"></h3>-->
 
 <style type="text/css">
     #info {
@@ -35,27 +39,17 @@
     }
 </style>
 <script>
-var marker = new mapboxgl.Marker()
-.setLngLat([30.5, 50.5])
-.addTo(map);
+    var marker = new mapboxgl.Marker()
+        .setLngLat([30.5, 50.5])
+        .addTo(map);
 </script>
-
-
-<!-- The HTML element that serves as the Mapbox container -->
-<div id='map'></div>
-
-<h3 id="reverseGeo"></h3>
-
 <!-- Mapbox JS -->
 <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
 <script src="js/keys.js"></script>
 <script src="js/mapbox-geocoder-utils.js"></script>
 <!-- Custom JS -->
-
 <script>
     mapboxgl.accessToken = mapboxKey;
-
-
     let map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v9',
@@ -123,28 +117,28 @@ var marker = new mapboxgl.Marker()
 
     marker.setPopup(alamoPopup)
 
-    document.addEventListener("keyup", function(e) {
+    document.addEventListener("keyup", function (e) {
         if (e.key === " ") {
             let rrMark = new mapboxgl.Marker()
                 .setLngLat([-97.6789, 30.5083])
                 .addTo(map);
         }
     });
-//////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////
     var shapes = ['popup1', 'popup1', 'popup1', 'popup1'];
 
     // loop through the array and log the values
-    shapes.forEach(function(shape) {
+    shapes.forEach(function (shape) {
         console.log('Here is a lovely shape: ' + shape + '.');
     });
-///////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////
 
-    geocode("19179 Blanco Rd #101, San Antonio, TX 78258", mapboxKey).then(function(data) {
+    geocode("19179 Blanco Rd #101, San Antonio, TX 78258", mapboxKey).then(function (data) {
         console.log(data);
         new mapboxgl.Marker().setLngLat(data).addTo(map);
     });
 
-    reverseGeocode({lat: 51.2194, lng: 4.4025}, mapboxKey).then(function(data) {
+    reverseGeocode({lat: 51.2194, lng: 4.4025}, mapboxKey).then(function (data) {
         console.log(data);
         document.querySelector("#reverseGeo").innerHTML = data;
     })
